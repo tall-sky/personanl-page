@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>guide</title>
+<style>
+	img{
+		width: 400px;
+		height: 150px;
+		vertical-align: middle;
+		margin-right: 60px;
+	}
+	.box{
+		height: 40px;
+		align-content: center;
+	}
+	.input_kuang{
+		width: 500px;
+		height: 40px;
+		border: 1px solid #e2e2e2;
+		vertical-align: middle;
+		
+	}
+	.input_img{
+		width: 30px;
+		height: 30px;
+		margin-left: 80px;
+		vertical-align: middle;
+		font-weight: 300
+	}
+	th{
+		height: 60px;
+	}
+	</style>
+	
+<script type="text/javascript" src=search.js></script>
+</head>
+
+<body bgcolor=#F2DBDB>
+	
+	
+	
+	<br /><br /><br />
+	<div align="center"><img src="images/head.png"></div>
+	<br />
+	<br />
+	<div class="box" align="center">
+		<form target="_blank" method="get" id='search' action="http://www.baidu.com/s"> 
+			<input type="text" name="word" id="search_content" class=input_kuang placeholder="请输入搜索关键字"  />
+			<input type="image" class=input_img src="images/搜索.png" style="margin-left: 30px"></input>
+			<br /><br /><br />
+			
+			<table border="0" style="margin-right:100px;">
+				<tr>
+					<th>
+						<input type="image" class=input_img src="images/谷歌.png" onClick="reset_search()">Google</input>
+					</th>
+					<th>
+						<input type="image" class=input_img src="images/baidu.png" onClick="reset_search_baidu()">百度</input>
+					</th>
+					<th>
+						<input type="image" class=input_img src="images/知乎.png" onClick="reset_search_zhihu()">知乎</input>
+					</th>
+					<th>
+						<input type="image" class=input_img src="images/bilibili-fill.png" onClick="reset_search_bili()">bilibili</input>
+					</th>
+				</tr>
+				<tr>
+					<th>
+						<input type="image" class=input_img src="images/google-plus.png" onClick="reset_search_scholar()">scholar</input>
+					</th>
+					<th>
+						<input type="image" class=input_img src="images/google-translate.png" onClick="reset_search_translate()">翻译</input>
+					</th>
+					<th>
+						<input type="image" class=input_img src="images/weibo.png" onClick="reset_search_weibo()">weibo</input>
+					</th>
+					<th>
+						<input type="image" class=input_img src="images/github.png" onClick="reset_search_github()">github</input>
+					</th>
+				</tr>
+		</table>
+
+			
+	
+			
+		</form>
+		
+	</div>
+	
+</body>
+</html>
